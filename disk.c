@@ -11,10 +11,7 @@ static int total_blocks = 0;
 int disk_init(const char *filename, int nblocks) {
     disk_fd = open(filename, O_RDWR | O_CREAT, 0666);
     if (disk_fd < 0) return -1;
-    
     total_blocks = nblocks;
-    
-    // Set file size
     off_t size = (off_t)nblocks * BLOCK_SIZE;
     if (ftruncate(disk_fd, size) != 0) {
         close(disk_fd);
