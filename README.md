@@ -1,7 +1,7 @@
 # Advanced Virtual File System (VFS) in C
 
 **Course:** CSE 325 - Operating Systems  
-**Developer:** [Your Name / ID Here]  
+**Developer:** Maharab Hossain  
 
 ## 📌 Project Overview
 This project is a fully functional, multi-threaded Virtual File System implemented in C. It simulates a physical hard drive using a local binary file (`vdisk.bin`) and provides a comprehensive set of POSIX-like system calls to manage files, hierarchical directories, and raw data bytes. The system is designed to be highly concurrent, thread-safe, and capable of handling large files using indirect block pointers.
